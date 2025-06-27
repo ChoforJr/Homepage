@@ -10,33 +10,26 @@
     <header>
       <picture>
         <source
-          srcset="avatars/header/mobile_size_300w.jpeg"
-          media="(max-width: 480px)"
+          srcset="avatars/header/laptop.png"
+          media="(min-width: 1024px)"
         />
+        <source srcset="avatars/header/tablet.png" media="(min-width: 768px)" />
         <source
-          srcset="avatars/header/mobile_size_500w.png"
-          media="(max-width: 620px)"
+          srcset="avatars/header/mobile_Large.png"
+          media="(min-width: 425px)"
         />
-        <source
-          srcset="avatars/header/tablet_Size_600w.png"
-          media="(max-width: 960px)"
-        />
-        <source
-          srcset="avatars/header/tablet_Size_800w.png"
-          media="(max-width: 1024px)"
-        />
-        <img src="avatars/header/default.png" alt="Header Profile Photo" />
+        <img src="avatars/header/mobile_Medium.png" alt="Header photo" />
       </picture>
       <section>
         <h2>About Me</h2>
         <p>
           I am an Aspiring web developer, dedicated to crafting engaging and
           efficient web applications. I'm building a strong foundation in
-          front-end development with a focus on responsive design and back-end
-          development using Node.js. My goal is to join a forward-thinking team
-          where I can contribute to innovative projects and further develop my
-          expertise. I'm highly motivated, adaptable, and ready to make an
-          impact.
+          front-end development with a focus on creative and responsive design
+          effectively using HTML, CSS and Javascript when needed. My goal is to
+          join a forward-thinking team where I can contribute to innovative
+          projects and further develop my expertise. I'm highly motivated,
+          adaptable, and ready to make an impact.
         </p>
         <div class="contactIcons">
           <a href="https://github.com/ChoforJr?tab=repositories"
@@ -205,40 +198,43 @@
     </main>
     <footer>
       <section>
-        <h2>Contact Me</h2>
+        <div class="contactMeDive">
+          <h2>Contact Me</h2>
+          <div class="contactIcons">
+            <a href="https://github.com/ChoforJr?tab=repositories"
+              ><img
+                src="icons/github (dark).svg"
+                alt="github icon"
+                class="icon"
+            /></a>
+            <a href="https://www.linkedin.com/in/choforforsakang/"
+              ><img src="icons/linkedin.svg" alt="linkedin icon" class="icon"
+            /></a>
+            <a href="https://simplex.chat/"
+              ><img
+                src="icons/simplex-chat.svg"
+                alt="simplex-chat icon"
+                class="icon"
+            /></a>
+          </div>
+        </div>
         <p>
           Please get in touch if you think our work could be mutually
           beneficial!
         </p>
-        <p>
+        <p class="emailParag">
           <img
             src="icons/email-outline.svg"
             alt="email icon"
             class="icon"
           />email: choforforsakang@gmail.com
         </p>
-        <div class="contactIcons">
-          <a href="https://github.com/ChoforJr?tab=repositories"
-            ><img src="icons/github (dark).svg" alt="github icon" class="icon"
-          /></a>
-          <a href="https://www.linkedin.com/in/choforforsakang/"
-            ><img src="icons/linkedin.svg" alt="linkedin icon" class="icon"
-          /></a>
-          <a href="https://simplex.chat/"
-            ><img
-              src="icons/simplex-chat.svg"
-              alt="simplex-chat icon"
-              class="icon"
-          /></a>
-        </div>
       </section>
-      <picture>
-        <img
-          src="avatars/footer/Footer Photo.svg"
-          alt="Footer Profile Photo"
-          class="footerPhoto"
-        />
-      </picture>
+      <img
+        src="avatars/footer/Footer Photo.svg"
+        alt="Footer Profile Photo"
+        class="footerPhoto"
+      />
     </footer>
   </body>
 </html>

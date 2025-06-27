@@ -51,7 +51,7 @@ main section {
 main section article {
   border: #1f2937 0.2rem solid;
   border-radius: 1rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   min-height: 28rem;
 }
 main section article:hover {
@@ -103,12 +103,53 @@ main section article p {
 .icon {
   width: 25px;
   padding-left: 0.5rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .icon:hover {
   transform: scale(1.5);
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+header section {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+header .contactIcons {
+  text-align: right;
+}
+@media (max-width: 1280px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer section {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+.contactMeDive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -3rem;
+}
+.emailParag {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
 .footerPhoto {
-  max-width: 500px;
+  max-width: 15rem;
+  transition: transform 1s ease-in-out;
+}
+.footerPhoto:hover {
+  transform: scale(1.5) translateY(-5rem);
 }
