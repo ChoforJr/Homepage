@@ -1,0 +1,68 @@
+body {
+  margin: auto;
+  font-size: 10px;
+  background-color: #3882f6;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "caprasimoregular";
+  src: url("caprasimo-regular-webfont.woff2") format("woff2"),
+    url("caprasimo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dancing_script_otregular";
+  src: url("dancingscript-regular-webfont.woff2") format("woff2"),
+    url("dancingscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "dancing_script_otregular";
+}
+
+main {
+  background-color: #e5e7eb;
+  padding: 0.5rem;
+}
+main section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1.5rem;
+}
+main section article {
+  border: black 0.1rem solid;
+  padding: 0.5rem;
+  transition: transform 1s ease-in-out;
+}
+main section article:hover {
+  transform: translateY(-1rem);
+}
+main section article div {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1000px) {
+  main section {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+
+.icon {
+  width: 25px;
+  padding-left: 0.5rem;
+  transition: transform 1s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.footerPhoto {
+  max-width: 500px;
+}
