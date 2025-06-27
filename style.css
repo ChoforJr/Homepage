@@ -8,27 +8,39 @@ body {
 
 @font-face {
   font-family: "caprasimoregular";
-  src: url("caprasimo-regular-webfont.woff2") format("woff2"),
-    url("caprasimo-regular-webfont.woff") format("woff");
+  src: url("Caprasimo-Regular/caprasimo-regular-webfont.woff2") format("woff2"),
+    url("Caprasimo-Regular/caprasimo-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "dancing_script_otregular";
-  src: url("dancingscript-regular-webfont.woff2") format("woff2"),
-    url("dancingscript-regular-webfont.woff") format("woff");
+  src: url("dancingscript-regular-webfont/dancingscript-regular-webfont.woff2")
+      format("woff2"),
+    url("dancingscript-regular-webfont/dancingscript-regular-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 p {
   font-family: "dancing_script_otregular";
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3 {
+  font-family: "caprasimoregular";
+  font-size: 2rem;
 }
 
 main {
   background-color: #e5e7eb;
   padding: 0.5rem;
+}
+main h2 {
+  margin-left: 4rem;
 }
 main section {
   display: grid;
@@ -37,16 +49,50 @@ main section {
   padding: 1.5rem;
 }
 main section article {
-  border: black 0.1rem solid;
-  padding: 0.5rem;
-  transition: transform 1s ease-in-out;
+  border: #1f2937 0.2rem solid;
+  border-radius: 1rem;
+  transition: transform 0.5s ease-in-out;
+  min-height: 28rem;
 }
 main section article:hover {
   transform: translateY(-1rem);
 }
-main section article div {
+.projects {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: -3rem;
+}
+.screenshot {
+  max-width: 100%;
+  min-height: 40%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-bottom: -2rem;
+  background-size: cover;
+  background-position: top;
+}
+main section article p {
+  padding: 0.5rem;
+}
+#battleshipScreenshot {
+  background-image: url("Photos/Battleship Screenshot.png");
+}
+#weatherAppScreenshot {
+  background-image: url("Photos/Weather App Screenshot.png");
+}
+#todoListScreenshot {
+  background-image: url("Photos/Todo List Screenshot.png");
+}
+#libraryScreenshot {
+  background-image: url("Photos/Library Screenshoot.png");
+}
+#ticTicToeScreenshot {
+  background-image: url("Photos/Tic Tac Toe Screenshot.png");
+}
+#etchASketchScreenshot {
+  background-image: url("Photos/Etch a Sketch Screenshot.png");
 }
 @media (min-width: 1000px) {
   main section {
@@ -57,7 +103,7 @@ main section article div {
 .icon {
   width: 25px;
   padding-left: 0.5rem;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .icon:hover {
   transform: scale(1.5);
